@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.estados {
+    font-size: 25px;
+    color: rgb(9, 227, 20);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.estados:hover {
+    text-decoration: underline;
+}
+
+.filmes {
+    font-size: 25px;
+}
+
+.filmes:hover {
+    text-decoration: underline;
+}
+
+.filmes-hoje {
+    color: darkred;
+}
+
+.filmes-amanha {
+    color: darkblue;
+}
