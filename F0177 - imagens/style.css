@@ -1,0 +1,27 @@
+h3 {
+    font-size: 40px;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+}
+
+.foto {
+    width: 150px;
+    margin-top: 10px;
+}
+
+div {
+    /* width: 200px; */
+}
+
+.png-svg {
+    width: 600px;
+    margin: 20px;
+}
+
+.svg-png {
+    background-color: lightblue;
+}
+

@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+.comprar {
+    background-color: #a8f;
+    padding: 10px 20px;
+    color: #103;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.item {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+}
+
+.grid {
+    display: grid;
+    height: 800px;
+    background-color: #e7e7e7;
+    grid-template-columns: auto auto; /*Podemos usar px também, além de fr*/
+    gap: 20px; /*Geralmente usamos gap no grid*/
+    /*
+    justify-content: space-evenly; Alinha na Vertical
+    align-content: space-around; Alinha na horizontal
+    */
+
+    /*Align e justify content*/
+    place-content: center; 
+
+}
