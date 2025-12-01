@@ -1,0 +1,33 @@
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    background-color: #e7e7e7;
+    border: 1px solid #d7d7d7;
+    padding: 20px;
+    margin: 0;
+    /*flex: 1; => flex-grow: 1; flex-shrink: 1; flex-basis: 0%;*/
+}
+
+/*Flex vs Grid*/
+
+/*Flex ele é mais "desorganizado", ele não ordena em coluna...*/
+
+/*Grid ordena em coluna...*/
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 20px;
+}
