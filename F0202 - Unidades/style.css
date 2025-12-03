@@ -1,0 +1,66 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    display: inline-block;
+}
+
+p {
+    background-color: lightblue;
+}
+
+.px {
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+/*o rem se adapta melhor na tela do usuário / ou os estilos padrão do html*/
+.rem {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+/*Outros testes - px, em e rem*/
+
+div {
+    font-size: 150%; /*Só muda para o em, pois é relativo ao seu elemento pai*/
+}
+
+.px-test {
+    font-size: 32px;
+}
+
+.em-test {
+    font-size: 2em;
+}
+
+.rem-test {
+    font-size: 2rem;
+}
+
+/*Agora testando vh e vw*/
+
+/*vh - viewport height -> Representa o tamanho da ALTURA da tela visível*/
+/*vw - viewport width -> Representa o tamanho da LARGURA da tela visível*/
+
+section {
+    width: 50vw;
+    height: 35vh;
+    background-color: tomato;
+}
+
+.vw-vh {
+    width: 50%;
+    height: calc(50vw / 2.5);
+    background-color: lightblue;
+}
+
