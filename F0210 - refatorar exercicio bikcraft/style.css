@@ -8,11 +8,6 @@ body {
   margin-top: 3.75rem;
 }
 
-.logo {
-  margin: 0 auto;
-  margin-bottom: 3.75rem;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -36,6 +31,12 @@ p {
 }
 
 /* Menu Nav */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +58,12 @@ p {
   border: 2px solid red;
 }
 
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
 /* main */
 .conteudo {
   display: grid;
@@ -75,9 +82,12 @@ p {
   justify-items: end;
 }
 
+.introducao h1 {
+  font-size: 2rem;
+}
+
 .introducao h1:before {
   content: "";
-  display: block;
   width: 3.75rem;
   height: 0.25rem;
   background: #e21;
@@ -100,7 +110,7 @@ p {
 }
 
 .subtitulo {
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
@@ -120,17 +130,15 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 1.25rem;
-  border-left: 0.25em solid #fff;
+  border-left: 0.25em solid transparent; /*Meu Deus, era só colocar transparent!*/
   transition: .2s;
+}
+.vantagens-item:hover {
+  border-color: #e21; /*Interessante esse border-color*/
 }
 
 .vantagens-item:nth-child(odd) {
   background-color: #f7f7f7;
-  border-left: 0.25em solid #f7f7f7;
-}
-
-.vantagens-item:hover {
-  border-left: 0.25em solid red;
 }
 
 .vantagens-item p {
