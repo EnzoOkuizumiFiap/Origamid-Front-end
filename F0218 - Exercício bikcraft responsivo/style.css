@@ -127,7 +127,7 @@ ul {
 
 .vantagens-item {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(40px, auto) 1fr;
   gap: 10px 20px;
   padding: 1.25rem;
   border-left: 0.25em solid transparent; /*Meu Deus, era só colocar transparent!*/
@@ -151,4 +151,66 @@ ul {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+/*media queries */
+
+@media(max-width: 800px) {
+  .header {
+    gap: 1rem;
+  }
+
+  .introducao {
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .introducao a {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .subtitulo {
+    word-break: break-word;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .vantagens {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .imagem-bike {
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+}
+
+@media(max-width: 550px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .imagem-bike {
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+  }
+
+  .introducao h1:before {
+    display: none;
+  }
+
+  main {
+    font-size: 1.2rem;
+  }
+
+  .menu a {
+    font-size: 1.5rem;
+  }
 }
