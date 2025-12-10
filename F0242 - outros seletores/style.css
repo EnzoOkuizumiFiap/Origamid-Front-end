@@ -1,0 +1,39 @@
+/* Seletores => Atributo */
+[required] {
+    border: 2px solid tomato;
+}
+
+a[href="#contato"] {
+    border: 2px solid greenyellow;
+}
+
+[href^="#"] {
+    background-color: tomato;
+}
+
+[href$=".com"] {
+    background-color: green;
+}
+
+/*Seletores >, + e *. */
+section > h2 {
+    color: tomato;
+}
+
+article p {
+    margin: 0;
+}
+
+article {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/*Seleciona somente os elementos p que vem após outro p (Não seleciona o primeiro p, pois não tem nenhum elemento p antes dele... */
+p + p {
+    margin-top: 20px;
+}
+
+* {
+    border: 0.1px solid red;
+}

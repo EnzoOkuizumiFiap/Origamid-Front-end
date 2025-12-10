@@ -1,0 +1,29 @@
+/* Media muda de acordo com a cor do sistema */
+
+:root {
+    --fundo: #fff;
+    --texto-1: #111;
+    --texto-2: #444;
+}
+
+@media(prefers-color-scheme: dark) { /*tem o light, mas colocamos fora caso o dispositivo não suporte*/
+    :root {
+        --fundo: #222;
+        --texto-1: #eee;
+        --texto-2: #bbb;
+    }
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--fundo);
+}
+
+section h1 {
+    color: var(--texto-1);
+}
+
+section p {
+    color: var(--texto-2);
+}

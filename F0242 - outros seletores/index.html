@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros seletores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seletores => Atributo</h1>
+    <p>[atributo] = Seleciona os elementos que tiverem o atributo dentro dos []</p>
+    <p>[name="email"] = Seleciona apenas o elmento que tiver o atributo e o valor</p>
+    <p>[href^="#"] = Atributos que comecem ^ com o valor</p>
+    <p>[href$=".com"] = Atributos que terminam $ com o valor</p>
+
+    <h2>[atributo]</h2>
+    <input type="text" aria-label="text">
+    <input type="text" aria-label="text" required>
+    <p required>Este é um texto</p>
+    <a href="#contato">Contato</a>
+    <a href="https://google.com">Google</a>
+
+    <h1>Sinais - >, + e *</h1>
+    <section>
+        <h2>Nossa empresa</h2>
+        <div>
+            <h2>Saiba Mais</h2>
+        </div>
+    </section>
+
+    <article>
+        <p>Esse é um teste parágrafo</p>
+        <p>Mais um teste aqui</p>
+        <p>E um último teste de p</p>
+    </article>
+</body>
+</html>
