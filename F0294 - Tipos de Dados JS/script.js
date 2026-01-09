@@ -63,3 +63,50 @@ console.log(filme.diretor.toUpperCase()); /*toUpperCase() é uma função */
 const texto = document.querySelector('p');
 console.log(texto.innerHTML);
 
+
+
+/* Funções */
+
+function logCurso() {
+    const nome = 'JavaScript';
+    console.log (nome);
+}
+
+logCurso();
+
+function logCurso2(nome, horas) { //<-- Parâmetro
+    console.log(nome, horas, "horas");
+    return {
+        nome,
+        horas,
+    };
+}
+
+logCurso2("JavaScript", "40"); //<-- Argumento
+const retorno = logCurso2("HTML", "20");
+
+console.log(retorno.nome);
+
+
+
+
+/* Escopo Funções */
+
+const nomeTeste = "JavaScript";
+
+function logCurso3() {
+    const horas = 40;
+
+    const nomeTeste = "HTML";
+    console.log(nomeTeste);
+
+    return nomeTeste;
+}
+
+const nomedaFuncao = logCurso3();
+
+// console.log(horas); -> Não acessa as variáveis da função...
+
+console.log("Nome da função ", nomedaFuncao);
+console.log("Nome ", nomeTeste);
+
